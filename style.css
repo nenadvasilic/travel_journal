@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+nav {
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100px;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b c d"
+    "a e e e"
+    "a f f f"
+    "a g g g";
+  padding: 20px;
+}
+
+.card-img {
+  width: 200px;
+  grid-area: a;
+  border-radius: 20px;
+}
+
+.card-icon {
+  width: 20px;
+  grid-area: b;
+  margin-left: 20px;
+}
+
+.card-country {
+  grid-area: c;
+  margin-left: -60px;
+  margin-top: 0;
+}
+
+.card-link {
+  grid-area: d;
+  margin-left: -80px;
+  margin-top: 0;
+}
+
+.card-title {
+  grid-area: e;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+.card-date {
+  grid-area: f;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+.card-text {
+  grid-area: g;
+  margin-left: 20px;
+  margin-top: -80px;
+}
